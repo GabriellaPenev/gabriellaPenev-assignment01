@@ -18,8 +18,8 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     }
 
     .wrapper {
-        max-width: 1200px;
-        width: 85%;
+        max-width: 1280px;
+        width: 80%;
         margin: 0 auto;
     }
 
@@ -101,8 +101,34 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     }
 
 
+    /* Menu section styling */
 
+    .menu-flex {
+        display: flex;
+        align-items: center;
+    }
 
+  
+    /* About section styling */
+   .about-flexbox {
+        display: flex;
+        align-items: center;
+   }
+ 
+   /* Dessert section styling */
+   .dessert-section {
+    background-color: lightgray ;
+   }
+
+   .dessert-flexbox {
+    display: flex;
+    padding: 50px 0;
+
+   }
+   
+   .dessert-img {
+    margin: 30px
+   }
 
     /* orange icon section styling */
     .icon-section {
