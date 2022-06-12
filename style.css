@@ -109,14 +109,14 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
     /* Menu section styling */
 
-    .menu-flex {
+    .menu-flexbox {
         display: flex;
         align-items: center;
     }
 
     .menu-text {
         padding-right: 100px;
-    }
+    } 
 
     /* About section styling */
 
@@ -188,6 +188,11 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         display: flex;
         justify-content: space-between;
         padding-bottom: 80px;
+    }
+
+    .gallery-flexbox img {
+        padding: 0 5px;
+        width: calc( (100% / 3) - 10px)
     }
     
     /* footer section styling */
