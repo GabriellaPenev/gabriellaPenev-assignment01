@@ -31,6 +31,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     h2 {
         font-size: 4.2rem;
         font-weight: bold;
+        margin: 0;
     }
 
     nav, 
@@ -40,11 +41,17 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     }
 
     button {
+        font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         font-size: 2rem;
+        padding: 8px 16px;
+        border: solid 3px #E75605;
+        background-color: #fff;
     }
 
-    p {
+    p,
+    footer input, 
+    footer label {
         font-family: 'Catamaran', sans-serif;
         font-size: 2rem;
     }
@@ -100,7 +107,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         text-align: center;
     }
 
-
     /* Menu section styling */
 
     .menu-flex {
@@ -108,29 +114,42 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         align-items: center;
     }
 
-  
+    .menu-text {
+        padding-right: 100px;
+    }
+
     /* About section styling */
+
    .about-flexbox {
         display: flex;
         align-items: center;
    }
+
+   .about-text {
+    padding-left: 100px;
+   }
  
    /* Dessert section styling */
+
    .dessert-section {
-    background-color: lightgray ;
+    background-color: #EFEFEF  ;
+   }
+
+   .dessert-section button {
+    background-color: #EFEFEF;
    }
 
    .dessert-flexbox {
     display: flex;
-    padding: 50px 0;
-
+    padding: 80px 0;
    }
    
    .dessert-img {
-    margin: 30px
+    margin-right: 30px
    }
 
     /* orange icon section styling */
+
     .icon-section {
         background-color: #E75605;
     }
@@ -146,5 +165,67 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         text-align: center;
         display: flex;
         justify-content: center;
-        padding: 10px;
+        padding: 20px 40px;
+        margin: 0;
     }
+
+    .icon-headings li a {
+        padding-bottom: 175px;
+    }
+
+    .icon-headings i {
+        padding-top: 175px;
+    }
+
+    /* gallery section styling */
+
+    .gallery-head {
+        text-align: center;
+        padding: 80px;
+    }
+
+    .gallery-flexbox {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 80px;
+    }
+    
+    /* footer section styling */
+    footer {
+        background-color: #EFEFEF;
+        padding-bottom: 60px;
+    }
+
+    footer nav {
+        padding: 40px 0;
+    }
+
+    .footer-flexbox {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-flexbox h2 {
+        padding-left: 30px;
+    }
+
+    input {
+        width: 450px;
+        color: #1F2022;
+        padding: 4px 0 4px 20px;
+        border: solid 2px #fff;
+    }
+    
+    input:focus {
+        outline: none;
+    }
+
+    footer label {
+        display: inline-block;
+        padding: 15px 0;
+    }
+
+    .subscribe-flexbox {
+        display: flex;
+    }
+  
