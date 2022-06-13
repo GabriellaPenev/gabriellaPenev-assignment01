@@ -32,6 +32,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         font-size: 4.2rem;
         font-weight: bold;
         margin: 0;
+        line-height: 40px;
     }
 
     nav, 
@@ -56,7 +57,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         font-size: 2rem;
     }
 
-    /* header and nav styling */
+    /* Header and Nav styling */
 
     nav ul {
         list-style: none;
@@ -107,9 +108,10 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         text-align: center;
     }
 
-    /* Menu section styling */
+    /* About and Blog section styling */
 
-    .about-flexbox {
+    .about-flexbox,
+    .blog-flexbox {
         display: flex;
         align-items: center;
     }
@@ -118,16 +120,15 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         padding-right: 100px;
     } 
 
-    /* About section styling */
-
-   .blog-flexbox {
-        display: flex;
-        align-items: center;
-   }
-
    .blog-text {
     padding-left: 100px;
    }
+
+   .about-img img,
+    .blog-img img {
+        width: 50vw;
+        display: block;
+    }
  
    /* Dessert section styling */
 
