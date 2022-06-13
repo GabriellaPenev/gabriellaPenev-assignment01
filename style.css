@@ -81,19 +81,19 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         font-size: 3rem;
     }
 
-    .nav-flex {
+    .nav-flexbox {
         display: flex;
         justify-content:center;
     }
 
-    .header-flex {
+    .header-flexbox {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         position: relative;
     }
 
-    .header-flex img {
+    .header-flexbox img {
         width: 50%;
     }
 
@@ -109,23 +109,23 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
     /* Menu section styling */
 
-    .menu-flexbox {
+    .about-flexbox {
         display: flex;
         align-items: center;
     }
 
-    .menu-text {
+    .about-text {
         padding-right: 100px;
     } 
 
     /* About section styling */
 
-   .about-flexbox {
+   .blog-flexbox {
         display: flex;
         align-items: center;
    }
 
-   .about-text {
+   .blog-text {
     padding-left: 100px;
    }
  
