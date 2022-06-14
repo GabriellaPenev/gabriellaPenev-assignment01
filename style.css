@@ -24,7 +24,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     }
 
     h1 {
-        font-size: 14.64rem;
+        font-size: clamp(7rem, 9vw, 14.64rem); 
         line-height: 120px;
         letter-spacing: 3px;
     }
@@ -34,6 +34,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         font-weight: bold;
         margin: 0;
         line-height: 40px;
+        padding-top: 10px;
     }
 
     nav, 
@@ -47,6 +48,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         font-weight: bold;
         font-size: 2rem;
         padding: 8px 16px;
+        margin-bottom: 10px;
         border: solid 3px #E75605;
         background-color: #fff;
     }
@@ -58,8 +60,8 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         font-size: 2rem;
     }
 
-    /* Header and Nav styling */
-
+    /* Header and Nav styling */ 
+ 
     nav ul {
         list-style: none;
         font-size: 2rem;
@@ -81,7 +83,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
     header i {
         font-size: 3rem;
-        padding: 7px 0;
+        padding: 7px;
     }
 
     .nav-flexbox {
@@ -91,7 +93,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
     .header-flexbox {
         display: flex;
-        flex-wrap: wrap;
         align-items: center;
         position: relative;
     }
@@ -119,11 +120,11 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     }
 
     .about-text {
-        padding-right: 100px;
+        padding-right: 30px;
     } 
 
    .blog-text {
-    padding-left: 100px;
+    padding-left: 30px;
    }
 
    .about-img img,
@@ -136,6 +137,10 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
    .dessert-section {
     background-color: #EFEFEF  ;
+   }
+
+   .dessert-section h2 {
+    padding-top: 0;
    }
 
    .dessert-section button {
@@ -217,6 +222,10 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         padding-left: 30px;
     }
 
+    footer button {
+        margin-bottom: 0;
+    }
+
     input {
         width: 450px;
         color: #1F2022;
@@ -236,4 +245,118 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     .subscribe-flexbox {
         display: flex;
     }
-  
+
+    /* Media Queries for smaller desktop, tablet, and mobile */
+    
+
+    @media (max-width: 1180px) {
+        h1 {
+            line-height: 100px;
+        }
+        
+        h2 {
+            font-size: 3.4rem;
+        }
+
+        p,
+        footer input, 
+        footer label,
+        button {
+            font-size: 1.6rem;
+        }
+      }
+      
+      @media (max-width: 1060px) {
+        .dessert-flexbox {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .dessert-img {
+            margin-right: 0;
+        }
+
+        .dessert-text {
+            text-align: center;
+        }
+        
+        .footer-flexbox {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-contact, 
+        .footer-subscribe,
+        .subscribe-flexbox {
+            text-align: center;
+        }
+      }
+
+    @media (max-width: 928px) {
+
+        h1 {
+            line-height: 75px;
+        }
+        
+        .about-flexbox {
+            flex-direction: column-reverse;
+        }
+
+        .blog-flexbox {
+            flex-direction: column;
+        }
+        .about-img img,
+        .blog-img img {
+            width: 100%;
+        }
+        
+        h2, 
+        .dessert-section h2 {
+            padding-top: 40px;
+        }
+
+        .about-text button, 
+        .blog-text button {
+            margin-bottom: 40px;
+        }
+
+        .about-text, 
+        .blog-text {
+            text-align: center;
+        }
+
+        .gallery-three {
+            display: none;
+        }
+
+        .gallery-flexbox img {
+            padding: 0 3px;
+            width: calc( (100% / 2) - 6px)
+        }
+    }
+      
+    @media (max-width: 640px) {
+        
+        .icon-headings i {
+            padding-top: 30px;
+        }
+
+        .icon-headings {
+            flex-direction: column;
+        }
+
+        .icon-headings li a {
+            padding-bottom: 30px;
+        }
+        .subscribe-flexbox {
+            flex-direction: column;
+        }
+        footer input {
+            margin-bottom: 15px;
+        }
+
+        footer input, 
+        footer button {
+            width: 100%;
+        }
+      }
