@@ -26,6 +26,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     h1 {
         font-size: 14.64rem;
         line-height: 120px;
+        letter-spacing: 3px;
     }
 
     h2 {
@@ -80,6 +81,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
     header i {
         font-size: 3rem;
+        padding: 7px 0;
     }
 
     .nav-flexbox {
